@@ -1,5 +1,2 @@
 # aws-ecs    
-streamlit-client-resources:ecs-task-cpu: 512
-    streamlit-client-resources:ecs-task-memory: 1024
-    streamlit-client-resources:ecs-task-count: 1
-    streamlit-client-resources:logs-retention-days: 30
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_service
