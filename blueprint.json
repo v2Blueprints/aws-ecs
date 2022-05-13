@@ -3,7 +3,7 @@
   "identifier": "aws-ecs",
   "about": {
     "title": "AWS ECS",
-    "explanation": "AWS Elastic Container Server"
+    "explanation": "AWS Elastic Container Service"
   },
   "configuration": {
     "vpc_id" : "aws_vpc.main.id",
