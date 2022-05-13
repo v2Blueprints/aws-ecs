@@ -1,14 +1,16 @@
-{
-   
-  "identifier": "aws-ecs",
-  "about": {
-    "title": "AWS ECS",
-    "explanation": "AWS Elastic Container Server"
-  },
-  "configuration": {
-    "vpc_id" : "aws_vpc.main.id",
-    "task-cpu": 512,
-    "task-memory": 1024,
-    "task-count": 1
-  }
+{   
+   "identifier": "aws-ecs",
+   "about": {
+      "title": "AWS Elastic Container Service",
+      "explanation": "AWS Elastic Container Server"
+   },
+   "provider": {
+      "default": {"identifier": "container_service"}
+   },   
+   "configuration": {
+       "vpc_id" : "aws_vpc.main.id",
+       "task-cpu": 512,
+       "task-memory": 1024,
+       "task-count": 1
+   }
 }
