@@ -1,20 +1,16 @@
-{
-   
-  "identifier": "aws-ecs",
-  "depend_ons" : "aws_iam_role",
-  "about": {
-    "title": "AWS ECS",
-    "explanation": "AWS Elastic Container Service"
-  },
-  "configuration": {
-    "scheduling_strategy" : "DAEMON",
-    "name" : "bar",
-    "cluster" : "aws_ecs_cluster.foo.id",
-    "iam_role" : "aws_iam_role.foo.arn",
-    "task-cpu": 512,
-    "task-memory": 1024,
-    "task-count": 1,
-    "task_definition" : "aws_ecs_task_definition.mongo.arn",
-    "network_configuration" : "awsvpc"
-  }
+{   
+   "identifier": "aws-ecs",
+   "about": {
+      "title": "AWS Elastic Container Service",
+      "explanation": "AWS Elastic Container Server"
+   },
+   "compute_service": {
+      "default": {"identifier": "container_service"}
+   },   
+   "configuration": {
+       "vpc_id" : "aws_vpc.main.id",
+       "task-cpu": 512,
+       "task-memory": 1024,
+       "task-count": 1
+   }
 }
