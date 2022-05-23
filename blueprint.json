@@ -15,7 +15,7 @@
     "task-cpu": 512,
     "task-memory": 1024,
     "task-count": 1,
-    "task_definition" : "aws_ecs_task_definition.doug.arn",
+    "task_definition" : "aws_ecs_task_definition.dougs.arn",
     "network_configuration" : "awsvpc"
    }
 }
